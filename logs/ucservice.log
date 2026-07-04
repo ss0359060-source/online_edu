@@ -1,0 +1,57 @@
+2026-07-04 16:30:03.195  INFO 13924 --- [           main] o.s.core.annotation.AnnotationUtils      : Failed to introspect annotations on class org.springframework.cloud.netflix.eureka.config.EurekaDiscoveryClientConfigServiceBootstrapConfiguration: java.lang.IllegalStateException: Could not obtain annotation attribute value for public abstract java.lang.Class[] org.springframework.boot.autoconfigure.condition.ConditionalOnClass.value()
+2026-07-04 16:30:03.205  INFO 13924 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4d3167f4: startup date [Sat Jul 04 16:30:03 CST 2026]; root of context hierarchy
+2026-07-04 16:30:03.321  INFO 13924 --- [           main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2026-07-04 16:30:03.327  INFO 13924 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6b43c022] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.7.RELEASE)
+
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+ _ _   |_  _ _|_. ___ _ |    _ 
+| | |\/|_)(_| | |_\  |_)||_|_\ 
+     /               |         
+                        3.0.5 
+Parsed mapper file: 'class path resource [com/online/edu/ucenter/mapper/xml/MemberMapper.xml]'
+2026-07-04 16:30:08.893  WARN 13924 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2026-07-04 16:30:08.908  WARN 13924 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60478077] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@566988093 wrapping com.mysql.jdbc.JDBC4Connection@4f0a8dec] will not be managed by Spring
+==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,salt,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE mobile = ? AND is_deleted = ? 
+==> Parameters: 13700000000(String), false(Boolean)
+<==    Columns: id, openid, mobile, password, nickname, sex, age, avatar, sign, salt, is_disabled, is_deleted, gmt_create, gmt_modified
+<==        Row: 1080736474191646722, null, 13700000000, 96e79218965eb72c92a549dd5a330112, 用户nVexScJJoi, 1, 20, null, null, null, 0, 0, 2019-01-01 12:11:33.0, 2019-01-12 11:00:22.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60478077]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dc04939] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2096972546 wrapping com.mysql.jdbc.JDBC4Connection@4f0a8dec] will not be managed by Spring
+==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,salt,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE mobile = ? AND is_deleted = ? 
+==> Parameters: 13700000000(String), false(Boolean)
+<==    Columns: id, openid, mobile, password, nickname, sex, age, avatar, sign, salt, is_disabled, is_deleted, gmt_create, gmt_modified
+<==        Row: 1080736474191646722, null, 13700000000, 96e79218965eb72c92a549dd5a330112, 用户nVexScJJoi, 1, 20, null, null, null, 0, 0, 2019-01-01 12:11:33.0, 2019-01-12 11:00:22.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dc04939]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4584c411] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1333571425 wrapping com.mysql.jdbc.JDBC4Connection@4f0a8dec] will not be managed by Spring
+==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,salt,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE mobile = ? AND is_deleted = ? 
+==> Parameters: 13700000000(String), false(Boolean)
+<==    Columns: id, openid, mobile, password, nickname, sex, age, avatar, sign, salt, is_disabled, is_deleted, gmt_create, gmt_modified
+<==        Row: 1080736474191646722, null, 13700000000, 96e79218965eb72c92a549dd5a330112, 用户nVexScJJoi, 1, 20, null, null, null, 0, 0, 2019-01-01 12:11:33.0, 2019-01-12 11:00:22.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4584c411]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dd465d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@686995730 wrapping com.mysql.jdbc.JDBC4Connection@4f0a8dec] will not be managed by Spring
+==>  Preparing: SELECT id,openid,mobile,password,nickname,sex,age,avatar,sign,salt,is_disabled,is_deleted,gmt_create,gmt_modified FROM ucenter_member WHERE mobile = ? AND is_deleted = ? 
+==> Parameters: 13700000000(String), false(Boolean)
+<==    Columns: id, openid, mobile, password, nickname, sex, age, avatar, sign, salt, is_disabled, is_deleted, gmt_create, gmt_modified
+<==        Row: 1080736474191646722, null, 13700000000, 96e79218965eb72c92a549dd5a330112, 用户nVexScJJoi, 1, 20, null, null, null, 0, 0, 2019-01-01 12:11:33.0, 2019-01-12 11:00:22.0
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@48dd465d]

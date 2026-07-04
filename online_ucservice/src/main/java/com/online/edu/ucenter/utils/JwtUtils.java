@@ -27,15 +27,15 @@ public class JwtUtils {
 
 	if(member == null
 			|| StringUtils.isEmpty(member.getId())
-			|| StringUtils.isEmpty(member.getNickname())
-			|| StringUtils.isEmpty(member.getAvatar())){
+			|| StringUtils.isEmpty(member.getNickname())){
 		return null;
 	}
+	String avatar = StringUtils.isEmpty(member.getAvatar()) ? "" : member.getAvatar();
 
 		String token = Jwts.builder().setSubject("edu")
 				.claim("id", member.getId())
 				.claim("nickname", member.getNickname())
-				.claim("avatar", member.getAvatar())
+				.claim("avatar", avatar)
 				.setIssuedAt(new Date())
 				.setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 30))
 				.signWith(SignatureAlgorithm.HS256, APPSECRET).compact();

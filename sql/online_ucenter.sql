@@ -26,6 +26,7 @@ CREATE TABLE `ucenter_member` (
   `age` tinyint(3) unsigned DEFAULT NULL COMMENT '年龄',
   `avatar` varchar(255) DEFAULT NULL COMMENT '用户头像',
   `sign` varchar(100) DEFAULT NULL COMMENT '用户签名',
+  `salt` varchar(255) DEFAULT NULL COMMENT '盐',
   `is_disabled` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否禁用 1（true）已禁用，  0（false）未禁用',
   `is_deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '逻辑删除 1（true）已删除， 0（false）未删除',
   `gmt_create` datetime NOT NULL COMMENT '创建时间',
